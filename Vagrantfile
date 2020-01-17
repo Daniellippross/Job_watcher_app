@@ -12,10 +12,10 @@ Vagrant.configure("2") do |config|
     app.vm.box = "ubuntu/xenial64"
     app.vm.network "private_network", ip: "192.168.10.100"
     app.hostsupdater.aliases = ["development.local"]
-    app.vm.synced_folder "Job_watcher", "/home/ubuntu/Job_watcher"
+    app.vm.synced_folder "App", "/home/ubuntu/App"
    #app.vm.provision "shell", path: "Environment/provision.sh"
    app.vm.provision "chef_solo" do |chef|
-      chef.cookbooks_path = ["C:/Users/It_Jobs_Watch_Data_Package"]
+      chef.cookbooks_path = ["berks-cookbook/Job_watcher_chef"]
       chef.add_recipe "Job_watcher_chef::default"
     end
   end
