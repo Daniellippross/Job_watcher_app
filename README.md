@@ -13,7 +13,7 @@ The next step for this project was to create two pipelines in Jenkins
 * Jenkins
 * AWS
 
-### Installing packages
+## The Chef cookbook
 The necessary packages needed to run this program should automatically be picked up by pycharm. You may find a a few pop ups within the IDE that state there are dependencies missing, if you simply install these through the IDE you should be set up correctly.  
 
 ### Running tests
