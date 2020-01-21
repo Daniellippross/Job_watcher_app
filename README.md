@@ -1,24 +1,17 @@
 # IT Jobs Watch Data
 
 ## Introduction
-The aim of this project is to create a simple service that can scrape useful data from ITJobswatch.
+The aim of the project was to take a python application made in Sparta global and get my first experiance in constructing a DevOps pipeline. The first step in my project was to provision a VM on which the python appliaction could run. I initally achived this through simple shell scripting of an Ubuntu vm (using vagrant) before moving on to provsioning via chef cookbooks, this allowed me to utilise the the built in spec testing and unit testing offered by the software.
 
-## Current Scope
-At present the app is set up to be cloned and used to simply scrape the below services:
+The next step for this project was to create two pipelines in Jenkins
 
-1. Home page top 30 job/roles / skills which can be found [here]()
-
-The aim will be to expand this to further services such as:
-
-* Regular polling of pages and writing to a database for longer terms stats
-* Bespoke calls for specific job role data
-
-And much more.
-
-## Usage
-_Pre-Requisites_
-* Pycharm IDE
-* Python 3.x + installed
+## Software/tools used
+* Python 3.x
+* ChefDK
+* Packer
+* git/git bash
+* Jenkins
+* AWS
 
 ### Installing packages
 The necessary packages needed to run this program should automatically be picked up by pycharm. You may find a a few pop ups within the IDE that state there are dependencies missing, if you simply install these through the IDE you should be set up correctly.  
