@@ -14,17 +14,10 @@ The next step for this project was to create two pipelines in Jenkins
 * AWS
 
 ## The Chef cookbook
-The necessary packages needed to run this program should automatically be picked up by pycharm. You may find a a few pop ups within the IDE that state there are dependencies missing, if you simply install these through the IDE you should be set up correctly.  
+  
+### Vagrant 
 
-### Running tests
-
-To test whether the program will work from your machine:
-
- * Ensure the `config.ini` file has the test environment set to `live`
- * Click the `Terminal` icon which can be found on the menu in the bottom left of Pycharm.
-* Ensure you're in the root path of the project and type `python -m pytest tests/`
-
-This should execute the tests if any fail you may have issues with this program.
+I began by creating the vagrantfile 
 
 ### Running and using the program
 To use the program simply right click on the `main.py` file and then click `Run 'main'`. This will run the command line user interface.
